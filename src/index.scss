@@ -1,0 +1,24 @@
+.scrollable {
+    --bg-rgb-color: 255, 255, 255;
+    --hover-width: 20px;
+    .hover1, .hover2 {
+        position: absolute;
+        display: "block";
+        top: 0;
+        bottom: 0;
+        width: var(--hover-width);
+    }
+    .hidden {
+        display: none;
+    }
+    .hover1 {
+        left: 0;
+        background: rgb(--bg-rgb-color, 0);
+        background: linear-gradient(-90deg, rgba(var(--bg-rgb-color),.3) 0%, rgba(var(--bg-rgb-color),.9) 100%);
+    }
+    .hover2 {
+        right: 0;
+        background: rgb(--bg-rgb-color, 0);
+        background: linear-gradient(90deg, rgba(var(--bg-rgb-color),.3) 0%, rgba(var(--bg-rgb-color),.9) 100%);
+    }
+}
